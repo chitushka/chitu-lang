@@ -14,8 +14,8 @@ int main(int argc, char *argv[]) {
     chitu_int a, b, c;
     chitu_val x = chitu_val_init(TYPE_INT, CONST_NO, ATTR_PUBLIC);
     chitu_int_set(&a, 3);
-    chitu_int_set(&b, 4);
-    c = chitu_int_plus(a, b);
+    chitu_int_set(&b, 0);
+    c = chitu_int_div(a, b);
     CHITU_SET_VAL_INT(x, c);
     chitu_dump(x);
 }

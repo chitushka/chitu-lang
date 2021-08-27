@@ -69,9 +69,9 @@ chitu_int chitu_int_div(chitu_int a, chitu_int b) {
 
     if (0 == b.i64) {
         c.i64 = 0;
-    } else {
         printf("\n-----\tERROR: DIVIDE BY ZERO!\n");
         exit(1);
+    } else {
         c.i64 = a.i64 / b.i64;
     }
 
